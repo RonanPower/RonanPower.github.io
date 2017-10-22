@@ -15,6 +15,12 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
   <style>
+	  a {
+		  color: #FFFFFF;
+	  }
+	  a:active {
+		  opacity: 1;
+	  }
 	  .container-fluid {
 		  padding-left:0px;
 		  padding-right:0px;
@@ -49,6 +55,7 @@
 		  width: 100%
 	  }
 	  .overlay-text {
+		  opacity: 1;
 		  color: #FFFFFF;
 		  padding-left: 50px;
 		  position: absolute;
@@ -64,9 +71,11 @@
 	<script src="js/bootstrap.js"></script>
 	<div class="container-fluid">
 	<header>
+	<div class="row">
 		<div class="jumbotron jumbotron-nopadding">
 			<div class="text-center"><h1>Timeline of Evolution</h1></div>
 		</div>
+	</div>
 	</header>
 	<div class="row">
 		<div class="col-lg-4 nopadding">
@@ -75,14 +84,14 @@
 			<div class="overlay">
 			
 				<div class="overlay-text">
-					<h1>Paleozoic Era</h1>
+					<h2><a href="#">Paleozoic Era</a></h2>
 					<ul>
-						<li>Cambrian Explosion</li>
-						<li>Ordovican Period</li>
-						<li>Silurian Period</li>
-						<li>Devonian - The Age of Fishes</li>
-						<li>Carboniferous - The Age of Plants</li>
-						<li>Permian Period</li>
+						<li><a href="#">Cambrian Explosion</a></li>
+						<li><a href="#">Ordovican Period</a></li>
+						<li><a href="#">Silurian Period</a></li>
+						<li><a href="#">Devonian - The Age of Fishes</a></li>
+						<li><a href="#">Carboniferous - The Age of Plants</a></li>
+						<li><a href="#">Permian Period</a></li>
 					</ul>
 				
 				</div>
@@ -90,10 +99,32 @@
 			</div>
 		</div>
 		<div class="col-lg-4 nopadding">
-			<img src="imgs/mesozoic-era.jpg" class="img-responsive" alt="Mesozoic-Era"/>
+			<img src="imgs/mesozoic-era.jpg" class="img-responsive img-overlay" alt="Mesozoic-Era"/>
+			
+			<div class="overlay">
+				<div class="overlay-text">
+					<h2><a href="#">Mesozoic Era</a></h2>
+					<ul>
+						<li><a href="#">Triassic Period</a></li>
+						<li><a href="#">Jurassic Period</a></li>
+						<li><a href="#">Cretaceous Period</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="col-lg-4 nopadding">
-			<img src="imgs/cenozoic-era.jpg" class="img-responsive" alt="Cenozoic-Era"/>
+			<img src="imgs/cenozoic-era.jpg" class="img-responsive img-overlay" alt="Cenozoic-Era"/>
+			
+			<div class="overlay">
+				<div class="overlay-text">
+					<h2><a href="#">Cenozoic Era</a></h2>
+					<ul>
+						<li><a href="#">Paleogene</a></li>
+						<li><a href="#">Neogene</a></li>
+						<li><a href="#">Quaternary</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	</div>
